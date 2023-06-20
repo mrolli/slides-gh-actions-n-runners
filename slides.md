@@ -202,7 +202,7 @@ title: GitHub Runners
 
 ## Github-hosted Runners
 
-[Docs on self-hosted Runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
+[Docs on GitHub-hosted Runners](https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners)
 
 **Pros:**
 
@@ -279,7 +279,7 @@ For on-premise, three possible "solutions":
 
 * ID runs their own self-hosted runner fleet
   * Things to clarify: who for whom at what cost -> Vision, RE, Budget ...?
-* Use [large runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners), currently beta
+* Use [GitHub-hosted large runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners), currently beta
 * Wait and buy GitHub-hosted runners in Azure => when, at what cost?
 
 ---
