@@ -240,7 +240,7 @@ title: GitHub Runners
 
 ---
 
-# Current Runner State
+# Current Runner Situation
 
 With GitHub Actions, developers can write and combine individual tasks called actions to create custom workflows. To enable GitHub Actions for your GitHub Enterprise Server instance, you must host at least one machine to execute jobs. This machine is called a self-hosted runner. Self-hosted runners can be physical, virtual, in a container, on-premises, or in a cloud. Your runner machine connects to GitHub Enterprise Server using the GitHub Actions self-hosted runner application. Self-hosted runners can run Linux, Windows, or macOS. For more information, see "About self-hosted runners."
 
@@ -250,22 +250,44 @@ Demo:
 * https://github.unibe.ch/idsys-unibe-ch/testy
 * https://github.com/mrolli/testy
 
+All three are the same, public and may be forked into other Orgs for testing
+purposes.
+
 ---
 
+## GHE Cloud: Action Policies
 
-## GHES: Action Policies
+<img src="/ghec_action_policies.png" class="rounded shadow" />
+
+---
+
+## GHE Cloud: GitHub-hosted Default Runners
+
+<img src="/ghec_action_runners.png" class="rounded shadow" />
+
+<img src="/ghec_standard_runners.png" class="rounded shadow" />
+
+---
+
+## GHE Cloud: Monthly Action Usage on 2023-06-20
+
+<img src="/ghec_montly_usage.png" class="rounded shadow" />
+
+---
+
+## GHE On-Prem: Action Policies
 
 <img src="/ghes_actions_allowed.png" class="rounded shadow" />
 
 ---
 
-## GHES: Self-hosted Enterprise Runners
+## GHE On-Prem: Self-hosted Runners Enterprise-level
 
 <img src="/ghes_no_runners.png" class="rounded shadow" />
 
 ---
 
-## GHES: Self-hosted Runners ID-SYS
+## GHE On-Prem: Self-hosted Runners Org ID-SYS
 
 <img src="/ghes_idsys_runners.png" class="rounded shadow" />
 
@@ -275,12 +297,24 @@ Demo:
 
 **Use github.com (aka Cloud) as much as possible!**
 
+Self-hosted runners are needed a) if working in GHE on-prem or b) working in
+GHE Cloud but with actions acting on local resources within UniBE networks.
+
 For on-premise, three possible "solutions":
 
 * ID runs their own self-hosted runner fleet
   * Things to clarify: who for whom at what cost -> Vision, RE, Budget ...?
-* Use [GitHub-hosted large runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners), currently beta
+* Use [GitHub-hosted large runners](https://docs.github.com/en/actions/using-github-hosted-runners/using-larger-runners), currently in public beta
 * Wait and buy GitHub-hosted runners in Azure => when, at what cost?
+
+**CAVEAT:**
+
+The current structure in our GitHub Enterprise (cloud + on on-premise) does not
+make it easy for ID to share policies/configuration/runners/... resources on
+this topic:
+
+* [Best practices for structuring organizations in your enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/user-management/managing-organizations-in-your-enterprise/best-practices-for-structuring-organizations-in-your-enterprise)
+* [Organization Archetypes](https://gist.github.com/rwnfoo/3e19747f6dc2c5b9cfb0ff9c89d834b4)
 
 ---
 transition: fade-out
