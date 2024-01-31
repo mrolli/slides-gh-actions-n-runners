@@ -13,8 +13,10 @@ jobs:
         run: npm install
       - name: Install slidev
         run: npm i -g @slidev/cli
+      - name: Install the theme-defeault
+        run: npm i -g @slidev/theme-default
       - name: Install for PDF
-        run: npm i -D playwright-chromium
+        run: npm i -g playwright-chromium
       - name: Build
         run: slidev build --base /slides-gh-actions-n-runners/
       - name: Deploy pages
