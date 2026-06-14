@@ -54,7 +54,7 @@ hideInToc: true
 
 https://docs.github.com/en/actions/examples/using-scripts-to-test-your-code-on-a-runner
 
-<img src="/overview-actions-using-scripts-ci-example.webp" class="rounded shadow" />
+<img src="./images/overview-actions-using-scripts-ci-example.webp" class="rounded shadow" />
 
 ---
 title: Action Examples Used Inhouse
@@ -257,39 +257,39 @@ purposes.
 
 ## GHE Cloud: Action Policies
 
-<img src="/ghec_action_policies.png" class="rounded shadow" />
+<img src="./images/ghec_action_policies.png" class="rounded shadow" />
 
 ---
 
 ## GHE Cloud: GitHub-hosted Default Runners
 
-<img src="/ghec_action_runners.png" class="rounded shadow" />
+<img src="./images/ghec_action_runners.png" class="rounded shadow" />
 
-<img src="/ghec_standard_runners.png" class="rounded shadow" />
+<img src="./images/ghec_standard_runners.png" class="rounded shadow" />
 
 ---
 
 ## GHE Cloud: Monthly Action Usage on 2023-06-20
 
-<img src="/ghec_montly_usage.png" class="rounded shadow" />
+<img src="./images/ghec_montly_usage.png" class="rounded shadow" />
 
 ---
 
 ## GHE On-Prem: Action Policies
 
-<img src="/ghes_actions_allowed.png" class="rounded shadow" />
+<img src="./images/ghes_actions_allowed.png" class="rounded shadow" />
 
 ---
 
 ## GHE On-Prem: Self-hosted Runners Enterprise-level
 
-<img src="/ghes_no_runners.png" class="rounded shadow" />
+<img src="./images/ghes_no_runners.png" class="rounded shadow" />
 
 ---
 
 ## GHE On-Prem: Self-hosted Runners Org ID-SYS
 
-<img src="/ghes_idsys_runners.png" class="rounded shadow" />
+<img src="./images/ghes_idsys_runners.png" class="rounded shadow" />
 
 ---
 
@@ -313,18 +313,20 @@ The current structure in our GitHub Enterprise (cloud + on on-premise) does not
 make it easy for ID to share policies/configuration/runners/... resources on
 this topic:
 
-* [Best practices for structuring organizations in your enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/user-management/managing-organizations-in-your-enterprise/best-practices-for-structuring-organizations-in-your-enterprise)
-* [Organization Archetypes](https://gist.github.com/rwnfoo/3e19747f6dc2c5b9cfb0ff9c89d834b4)
+- [Best practices for structuring organizations in your enterprise](https://docs.github.com/en/enterprise-cloud@latest/admin/user-management/managing-organizations-in-your-enterprise/best-practices-for-structuring-organizations-in-your-enterprise)
+- [Organization Archetypes](https://gist.github.com/rwnfoo/3e19747f6dc2c5b9cfb0ff9c89d834b4)
 
 ---
+
 transition: fade-out
 layout: two-cols
+
 ---
 
 # Book Recommendations
 
-<img src="/book1.png" class="m-0 h-100 rounded shadow" />
+<img src="./images/book1.png" class="m-0 h-100 rounded shadow" />
 
 ::right::
 
-<img src="/book2.png" class="m-15 h-100 rounded shadow" />
+<img src="./images/book2.png" class="m-15 h-100 rounded shadow" />
